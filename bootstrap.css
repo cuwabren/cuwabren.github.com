@@ -264,11 +264,11 @@ a:hover {
 .row:after {
   clear: both;
 }
-<!--[class*="span"] {
+/*[class*="span"] {
   display: inline;
   float: left;
   margin-left: 20px;
-}-->
+}*/
 .span1 {
   width: 40px;
 }
