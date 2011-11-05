@@ -6,6 +6,7 @@
 
 	<!-- le scripts -->
 	<script src="../scripts/jquery.js"></script>
+	<script src="../scripts/jwplayer/jwplayer.js"></script>
 
 	<!-- le IE 6-8 fix -->
 	<!--[if lt IE 9]
@@ -59,6 +60,16 @@
 		.topbar .btn {
 			border: 0;
 		}
+		.post {
+			margin: 15px;
+			padding: 10px;
+			-webkit-border-radius: 0 0 6px 6px;
+			   -moz-border-radius: 0 0 6px 6px;
+			        border-radius: 0 0 6px 6px;
+			border: solid #96969696;
+			background-color: #aaa;
+			color: #969696;
+		}
 	</style>
 </head>
 <body>
@@ -81,7 +92,15 @@
 			</div>
 			<div class="row">
 				<div class="span10">
-					<h2>Main content</h2>
+					<div class="post">
+						<script type="text/javascript">
+								jwplayer("mediaplayer").setup({
+									flashplayer: "./jwplayer/player.swf",
+									file: "videos/test.mov",
+									image: "./jwplayer/preview.jpg"
+								});
+						</script>
+					</div>
 				</div>
 				<div class="span4">
 					<h3>Secondary content</h3>
